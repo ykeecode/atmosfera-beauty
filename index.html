@@ -1104,9 +1104,11 @@
 function $(id){return document.getElementById(id)}
 
 /* ==================== НАСТРОЙКИ ОТПРАВКИ ==================== */
-var TG_BOT_TOKEN = '9089793281:AAFQixXo-OgH1YJDN0BbQ-AXFz_dUdwBOfg';
-var TG_CHAT_ID = '8291476324';
-var CONTACT_EMAIL = 'daniilveselkov03@gmail.com';
+TG_BOT_TOKEN = '';
+
+TG_CHAT_ID = '';
+
+CONTACT_EMAIL = 'hello@example.com';
 
 function escapeHtml(s){
   return String(s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]});
