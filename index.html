@@ -491,7 +491,7 @@
   </nav>
   <div class="header-actions">
     <button type="button" class="icon-btn" id="searchToggle" title="Поиск">🔍</button>
-    <button type="button" class="lang-btn" id="langToggle" title="Сменить язык">RU</button>
+   
     <button type="button" class="icon-btn" id="themeToggle" title="Сменить тему">🌙</button>
     <a class="btn header-cta" data-page="booking">Записаться</a>
   </div>
@@ -1443,12 +1443,7 @@ on(themeToggle,'click',function(){
   if(isDark){document.documentElement.removeAttribute('data-theme');themeToggle.textContent='🌙';try{localStorage.setItem('theme','light')}catch(e){}}
   else{document.documentElement.setAttribute('data-theme','dark');themeToggle.textContent='☀️';try{localStorage.setItem('theme','dark')}catch(e){}}
 });
-var langToggle=$('langToggle'),currentLang='ru';
-on(langToggle,'click',function(){
-  currentLang=currentLang==='ru'?'en':'ru';
-  langToggle.textContent=currentLang.toUpperCase();
-  alert(currentLang==='en'?'English version coming soon! Currently available in Russian 🌸':'Русская версия включена ✿');
-});
+
 
 var pagesList=['home','manicure','brows','pedicure','prices','calculator','palette','quiz','masters','gallery','reviews','promotions','loyalty','blog','faq','contacts','booking','about'];
 function navigate(page){
